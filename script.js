@@ -1,20 +1,35 @@
-let printEntries = (new_list) => {
-    // previousEntries = document.getElementById("previously")
-    let sum = 0;
-    new_list.forEach(function(currentValue,index){
-        let p = document.createElement("p");
-        p.textContent=currentValue.date_created;
-        document.getElementById("previously").appendChild(p);
+let printEntries = (new_list,index) => {
+    previousEntries = document.getElementById("previously")
+    // let sum = 0;
+    // new_list.forEach(function(currentValue,index){
+    //     let p = document.createElement("p");
+    //     p.textContent=(`${currentValue.date_created}\n ${currentValue.reflectTitle}\n ${currentValue.reflect_message}\n Confidence is ${currentValue.reflect_confidence}`);
+    //     document.getElementById("previously").appendChild(p);
 
 
-
-    });
     
+    
+    // // });
+    // for (let index = 0; index < new_list.length; index++) {
+        // let prevJournal = document.createElement("p");
+        // prevJournal.textConent = (`${new_list[index].date_created}\n ${new_list[index].reflectTitle}\n ${new_list[index].reflect_message}\n Confidence is ${new_list[index].reflect_confidence}`);
+        // document.getElementById("previously").appendChild(prevJournal);
+        
+        
+    
+    console.log(new_list)
+    let p = document.createElement("p");
+    p.textContent = `${new_list[index].date_created}`
+    
+    document.getElementById("previously").appendChild(p);
+    index++;
+    
+
 }
 
 
 //Function for creating object instances of journal data
-let createJournal = (date, title, message, confidence,list) => {
+let createJournal = (date, title, message, confidence,list,index) => {
     // let journalEntries =[];
     const journalEntry = {
         date_created: date,
@@ -31,11 +46,12 @@ let createJournal = (date, title, message, confidence,list) => {
     console.log(list);
 
     //Sending list to print to DOM
-    printEntries (list);
+    printEntries (list,index);
 
 }
 let main = () => {
     let journalEntries = [];
+    let index =0;
     reflectDate = document.getElementById("date");
     reflectTitle = document.getElementById("title");
     reflectMessage = document.getElementById("reflection");
@@ -50,7 +66,7 @@ let main = () => {
         titleValue = reflectTitle.value;
         messageValue = reflectMessage.value;
         confidenceValue = reflectConfidence.value;
-        createJournal(dateValue, titleValue, messageValue, confidenceValue,journalEntries);
+        createJournal(dateValue, titleValue, messageValue, confidenceValue,journalEntries,index);
         // evt.preventDefault();
     })
 

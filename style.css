@@ -1,23 +1,5 @@
 .container{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: auto;
-    
+    grid-template-columns: 1fr 1fr;
+}
 
-}
-#submit{
-    background-color: blue;
-}
-h1{
-    text-align: center;
-}
-#title{
-    width: 10%;
-    grid-column: 2;
-}
-.message{
-    width: 644px;
-    height: 318;
-
-
-}
