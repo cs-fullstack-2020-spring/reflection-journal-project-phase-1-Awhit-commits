@@ -1,6 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    width: auto;
     
 
 }
@@ -11,12 +12,12 @@ h1{
     text-align: center;
 }
 #title{
-    width: 100%;
+    width: 10%;
     grid-column: 2;
 }
 .message{
     width: 644px;
     height: 318;
-    
+
 
 }

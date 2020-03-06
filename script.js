@@ -1,9 +1,12 @@
 let printEntries = (new_list) => {
-    previousEntries = document.getElementById("previously")
+    // previousEntries = document.getElementById("previously")
     let sum = 0;
     new_list.forEach(function(currentValue,index){
-        sum+= currentValue;
-        previousEntries.innerHTML =`<p> ${currentValue.date_created}</p>`;
+        let p = document.createElement("p");
+        p.textContent=currentValue.date_created;
+        document.getElementById("previously").appendChild(p);
+
+
 
     });
     

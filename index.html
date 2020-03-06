@@ -19,19 +19,19 @@
                         <label for="date">
                             Date
                         </label>
-                        <input type="date" name="date" id="date">
+                        <input type="date" name="date" id="date" required>
                     </p>
                 </div>
                 <div class="title">
                     <p>
                         <label for="title">Title </label>
-                        <input type="text" name="title" id="title" placeholder="Title">
+                        <input type="text" name="title" id="title" placeholder="Title" required>
                     </p>
                 </div>
                 <div class="reflection">
                     <label for="reflection">Reflection</label>
                     <p>
-                        <textarea name="reflection" id="reflection" cols="100" rows="20" placeholder="Message">
+                        <textarea name="reflection" id="reflection" cols="100" rows="20" placeholder="Message" required>
                         </textarea>
 
                     </p>
@@ -39,7 +39,7 @@
 
                 <div class="confidence">
                     <p>
-                        <select name="reflection_confidence" id="reflection_confidence">
+                        <select name="reflection_confidence" id="reflection_confidence" required>
                             <option value="">Please Select A Confidence Level</option>
                             <option value="Low">Low</option>
                             <option value="Medium">Medium</option>
@@ -51,9 +51,7 @@
 
             </fieldset>
             <div class="previously" id="previously">
-                <p id="previousEntries">
-
-                </p>
+            
             </div>
         </div>
 
