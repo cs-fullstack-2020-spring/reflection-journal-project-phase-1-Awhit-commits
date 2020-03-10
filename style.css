@@ -1,5 +1,11 @@
-.container{
+.form{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr, 1fr;
+}
+.previously{
+    grid-row: 1;
+    grid-column: 2;
+    padding: 5%;
+    vertical-align: text-top;
 }
 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="">
+                <fieldset>
+                    <legend>New Journal Entry</legend>
+                    <div class="date">
+                        <p>
+                            <label for="date">
+                                Date
+                            </label>
+                            <input type="date" name="date" id="date" placeholder="Date" required>
+                        </p>
+                    </div>
+                    <div class="title">
+                        <p>
+                            <label for="title">Title</label>
+                            <input type="text" name="title" id="title" placeholder="Title" required>
+                        </p>
+                    </div>
+                    <div class="message ">
+                        <p>
+                            <label for="message">
+                                Message:
+                            </label><br>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
+                                required></textarea>
+                        </p>
+                    </div>
+                    <div class="confidence">
+                        <p>
+                            <select name="reflection_confidence" id="reflection_confidence" required>
+                                <option value="">Please Select a Confidence Level</option>
+                                <option value="Low">Low</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">High</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="submit" id="submit">
+                    </div>
+
+                </fieldset>
+            </form>
+            <div class="previously" id="previously">
+                <h1>My Previous Entries</h1>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
