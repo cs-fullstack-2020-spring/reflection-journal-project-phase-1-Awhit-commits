@@ -9,3 +9,18 @@
     vertical-align: text-top;
 }
 
+textarea{
+    background-color: transparent;
+    opacity: 0.5;
+    
+
+}
+h1{
+    text-align: center;
+}
+
+body {
+    background-image: url(../aerial-background-cafe-coffee-communication-computer-1454709-pxhere.com.jpg);
+    background-color: rebeccapurple;
+    background-size: cover;
+   }
