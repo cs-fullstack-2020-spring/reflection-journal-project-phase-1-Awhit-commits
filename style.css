@@ -1,26 +1,30 @@
 .form{
     display: grid;
     grid-template-columns: 1fr, 1fr;
+    color: white;
 }
 .previously{
     grid-row: 1;
     grid-column: 2;
     padding: 5%;
     vertical-align: text-top;
+
 }
 
 textarea{
     background-color: transparent;
     opacity: 0.5;
+    color: white;
     
 
 }
 h1{
     text-align: center;
+    color: white;
 }
 
 body {
-    background-image: url(../aerial-background-cafe-coffee-communication-computer-1454709-pxhere.com.jpg);
+    background-image: url("aerial-background-cafe-coffee-communication-computer-1454709-pxhere.com.jpg");
     background-color: rebeccapurple;
     background-size: cover;
    }
